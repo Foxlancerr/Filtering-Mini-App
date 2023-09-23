@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>find Login form</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="section" id="admin-data-box">
+      <div class="admin-data-box">
+        <h1 class="primary-heading">students Data</h1>
+        <div class="filteroption">
+          <select name="values" id="option">
+            <option value="default" selected>default</option>
+            <option value="all">all</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="pass">pass</option>
+            <option value="fail">fail</option>
+          </select>
+          <button type="submit" class="filter-btn primary-btn" id="filter-btn">
+            Filter
+          </button>
+        </div>
+
+        <table class="table">
+          <thead>
+            <th>Name</th>
+            <th>gender</th>
+            <th>percentage</th>
+            <th>marks</th>
+            <th>pass/fail</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section" id="login-box">
+      <div class="login-box">
+        <h1 class="primary-heading">login here</h1>
+
+        <div class="login-data-box">
+          <div class="input-content">
+            <input
+              type="text"
+              placeholder="enter your username"
+              id="username"
+              class="username"
+            />
+            <input
+              type="password"
+              placeholder="enter your passward"
+              id="passward"
+              class="passward"
+            />
+          </div>
+          <button type="submit" class="primary-btn login-btn" id="login-btn">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="student-data-box">
+      <div class="student-data-box">
+        <h1 class="primary-heading">students Details</h1>
+
+        <div class="student-data">
+          <div class="student-data-content">
+            <h1>Student Name</h1>
+            <h2 id="name-h2">ishaq</h2>
+          </div>
+          <div class="student-data-content">
+            <h1>gender</h1>
+            <h2 id="gender-h2">male</h2>
+          </div>
+          <div class="student-data-content">
+            <h1>total marks obtained</h1>
+            <h2 id="marks-h2">300</h2>
+          </div>
+          <div class="student-data-content">
+            <h1>percentage</h1>
+            <h2 id="percentage-h2">45%</h2>
+          </div>
+          <div class="message-box" id="message-box"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="practice.js"></script> -->
+
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>

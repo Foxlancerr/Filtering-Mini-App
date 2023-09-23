@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* html{
+    font-size: 10px;
+} */
+
+button,
+select,
+input {
+  border: none;
+  background: none;
+}
+input {
+  display: block;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  /* display: flex; */
+  justify-content: center;
+  /* background-color: red; */
+  width: max-content;
+  padding: 20px;
+  flex-direction: column;
+}
+.primary-heading {
+  font-size: 43px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: black;
+}
+.filteroption {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.filteroption select {
+  background-color: azure;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 3px;
+  font-size: 15px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.filteroption select option {
+  background-color: black;
+  color: blue;
+  cursor: pointer;
+  padding: 10px;
+}
+.primary-btn {
+  background-color: black;
+  color: beige;
+  cursor: pointer;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.table {
+  background-color: rgba(233, 233, 233, 0.668);
+  /* padding: 10px; */
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.table thead {
+  background-color: black;
+  color: aliceblue;
+}
+
+/* login style is started now */
+
+.login-box,
+.admin-data-box,
+.student-data-box {
+  background-color: rgba(177, 177, 177, 0.747);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+}
+
+.username,
+.passward {
+  display: block;
+  width: 100%;
+  margin: 10px 0px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.24);
+}
+.username:hover,
+.passward:hover {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.651);
+}
+.login-btn {
+  display: block;
+  width: 100%;
+}
+
+/* students details is style now */
+
+.student-data-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.473);
+  text-transform: capitalize;
+  /* background-color: aqua; */
+}
+.student-data-content h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  color: rgb(17, 17, 17);
+}
+.student-data-content h2 {
+  color: rgb(37, 0, 139);
+  text-transform: uppercase;
+}
+.message-box {
+  margin-top: 20px;
+  /* background-color: aqua; */
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+}
+.message-box p > span {
+  font-size: 23px;
+  font-weight: 900;
+  margin-right: 5px;
+}
